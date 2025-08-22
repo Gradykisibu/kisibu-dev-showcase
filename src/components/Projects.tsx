@@ -11,7 +11,16 @@ export const Projects = () => {
       technologies: ["React.js", "Tailwind CSS", "JavaScript", "Responsive Design"],
       liveUrl: "https://cloud-mix-phase-1.vercel.app/",
       githubUrl: "#",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/32bc5025-161b-4b7b-b0ab-7a559378b21c.png"
+    },
+    {
+      title: "FitSense",
+      description: "AI outfit rater and stylist application. Upload your look or mix items to get smart, actionable style advice with features like style critique and closet suggestions.",
+      status: "Complete",
+      technologies: ["React.js", "Next.js", "AI Integration", "TypeScript"],
+      liveUrl: "https://fit-sense-lemon.vercel.app/login",
+      githubUrl: "#",
+      image: "/lovable-uploads/23786134-77a8-4615-807c-bdaf1e5cc4d2.png"
     }
   ];
 
