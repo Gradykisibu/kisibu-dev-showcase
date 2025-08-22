@@ -34,8 +34,8 @@ export const Hero = () => {
           </Button>
           <Button 
             size="lg" 
-            variant="outline" 
-            className="border-hero-text/30 text-hero-text hover:bg-hero-text/10 px-8 py-3"
+            variant="secondary" 
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 border border-primary/20"
             asChild
           >
             <a href="#contact">Get In Touch</a>

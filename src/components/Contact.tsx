@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,37 +20,15 @@ export const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      // Check if Supabase is properly configured
-      if (!supabase) {
-        throw new Error('Supabase not configured');
-      }
-
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: {
-          name: formData.name,
-          email: formData.email,
-          message: `Subject: ${formData.subject}\n\n${formData.message}`
-        }
-      });
-
-      if (error) throw error;
-
+    // Simple success message - no email sending
+    setTimeout(() => {
       toast({
-        title: "Message Sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: "Thank you for your interest!",
+        description: "Please contact me directly at kisibugrady3980@gmail.com",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
-      console.error('Error sending message:', error);
-      toast({
-        title: "Setup Required",
-        description: "Email functionality requires Supabase configuration. Please contact me directly at kisibugrady3980@gmail.com",
-        variant: "destructive",
-      });
-    } finally {
       setIsSubmitting(false);
-    }
+    }, 1000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
