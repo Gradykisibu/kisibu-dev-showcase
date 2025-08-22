@@ -22,6 +22,11 @@ export const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      // Check if Supabase is properly configured
+      if (!supabase) {
+        throw new Error('Supabase not configured');
+      }
+
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
         body: {
           name: formData.name,
@@ -40,8 +45,8 @@ export const Contact = () => {
     } catch (error) {
       console.error('Error sending message:', error);
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again or contact me directly.",
+        title: "Setup Required",
+        description: "Email functionality requires Supabase configuration. Please contact me directly at kisibugrady3980@gmail.com",
         variant: "destructive",
       });
     } finally {
