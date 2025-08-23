@@ -18,7 +18,7 @@ export const Projects = () => {
       description: "AI outfit rater and stylist application. Upload your look or mix items to get smart, actionable style advice with features like style critique and closet suggestions.",
       status: "Complete",
       technologies: ["React.js", "Next.js", "AI Integration", "TypeScript"],
-      liveUrl: "https://fit-sense-lemon.vercel.app/login",
+      liveUrl: "https://fit-sense-lemon.vercel.app",
       githubUrl: "#",
       image: "/lovable-uploads/23786134-77a8-4615-807c-bdaf1e5cc4d2.png"
     }
