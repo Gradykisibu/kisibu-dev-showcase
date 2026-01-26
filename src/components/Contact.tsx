@@ -8,9 +8,9 @@ import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
 // EmailJS Configuration - Replace these with your actual EmailJS credentials
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID"; // Get from EmailJS dashboard
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // Get from EmailJS dashboard  
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY"; // Get from EmailJS dashboard
+const EMAILJS_SERVICE_ID = "service_1s44ael";
+const EMAILJS_TEMPLATE_ID = "template_94lkonl";
+const EMAILJS_PUBLIC_KEY = "vrF1DZRPyDKiL0uLz";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,19 +25,6 @@ export const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Check if EmailJS is configured
-    if (EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" || 
-        EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID" || 
-        EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
-      toast({
-        title: "Configuration Required",
-        description: "Please configure EmailJS credentials. Contact me at kisibugrady3980@gmail.com",
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
-      return;
-    }
 
     try {
       await emailjs.send(
