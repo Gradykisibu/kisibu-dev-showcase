@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
 // EmailJS Configuration - Replace these with your actual EmailJS credentials
-const EMAILJS_SERVICE_ID = "service_1s44ael";
+const EMAILJS_SERVICE_ID = "service_16un02l";
 const EMAILJS_TEMPLATE_ID = "template_94lkonl";
 const EMAILJS_PUBLIC_KEY = "vrF1DZRPyDKiL0uLz";
 
