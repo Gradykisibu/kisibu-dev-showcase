@@ -41,7 +41,7 @@ export const Contact = () => {
   const contactInfo = [
     { icon: <Mail size={20} />, label: "Email", value: "kisibugrady3980@gmail.com", href: "mailto:kisibugrady3980@gmail.com" },
     { icon: <Phone size={20} />, label: "Phone", value: "+27 61 649 3416", href: "tel:+27616493416" },
-    { icon: <MapPin size={20} />, label: "Location", value: "52 Andrews Street, Kenilworth", href: null },
+    { icon: <MapPin size={20} />, label: "Location", value: "199 Ferreira Street, Kenilworth, Johannesburg South", href: null },
   ];
 
   const socialLinks = [
