@@ -1,5 +1,5 @@
 
-import { Code, Database, Cloud, Palette, Users, Zap } from "lucide-react";
+import { Code, Database, Cloud, Users } from "lucide-react";
 
 export const Skills = () => {
   const skillCategories = [

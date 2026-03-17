@@ -69,7 +69,14 @@ export const Experience = () => {
                       <div className="flex items-center">
                         <Calendar size={16} className="mr-2" />
                         {exp.period}
+                    </div>
+                    
+                    {exp.technologies && (
+                      <div className="flex items-center mt-2 text-muted-foreground">
+                        <Wrench size={16} className="mr-2" />
+                        <span className="text-sm">{exp.technologies}</span>
                       </div>
+                    )}
                       <div className="flex items-center">
                         <MapPin size={16} className="mr-2" />
                         {exp.location}
