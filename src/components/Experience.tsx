@@ -1,30 +1,35 @@
 
-import { Calendar, MapPin, Briefcase } from "lucide-react";
+import { Calendar, MapPin, Briefcase, Wrench } from "lucide-react";
 
 export const Experience = () => {
   const experiences = [
     {
       company: "RapidTrade",
-      position: "Front-End Developer",
+      position: "Cross-Platform Intermediate Software Developer",
       location: "Johannesburg",
-      period: "Feb 2024 – Current",
+      period: "March 2024 – Present",
+      technologies: "Golang, Python, SQL, AWS, ReactJS",
       achievements: [
-        "Built fast, responsive front-end apps with React.js/Next.js (improved performance by 30%)",
-        "Collaborated with UI/UX teams to deliver mobile-friendly, pixel-perfect interfaces",
-        "Integrated REST APIs and AWS services",
-        "Contributed to Agile workflows (sprints, reviews, retros)",
-        "Implemented reusable components and design systems"
+        "Develop and maintain frontend and backend client solutions",
+        "Work extensively with AWS services including S3, DynamoDB, Athena, Lambda, CloudWatch, SWF, CloudFormation",
+        "Built workflow automations integrating DynamoDB to Stream Order data to BigQuery to improve operational efficiency",
+        "Designed and generated customer reporting systems using AWS Athena and S3, integrating results into frontend applications",
+        "Contributed to an AI-powered client project using AWS Bedrock, S3, and Golang",
+        "Collaborate with cross-functional teams to deliver scalable and secure cloud-based systems"
       ]
     },
     {
       company: "Active Media Industries",
       position: "Developer",
-      location: "Johannesburg", 
-      period: "Jan 2021 – Jan 2024",
+      location: "Johannesburg",
+      period: "2022 – 2023",
+      technologies: "ReactJS, Next.js, React Native, JavaScript, Python",
       achievements: [
-        "Learned and adapted quickly to new technologies",
-        "Strong communication and teamwork skills",
-        "Worked flexible hours and met deadlines under pressure"
+        "Built and maintained client-facing web and mobile applications",
+        "Fixed and optimized existing client projects",
+        "Worked directly with clients to deliver customized solutions",
+        "Mentored junior interns in JavaScript and Python development",
+        "Participated in project planning and feature design"
       ]
     }
   ];
@@ -64,7 +69,14 @@ export const Experience = () => {
                       <div className="flex items-center">
                         <Calendar size={16} className="mr-2" />
                         {exp.period}
+                    </div>
+                    
+                    {exp.technologies && (
+                      <div className="flex items-center mt-2 text-muted-foreground">
+                        <Wrench size={16} className="mr-2" />
+                        <span className="text-sm">{exp.technologies}</span>
                       </div>
+                    )}
                       <div className="flex items-center">
                         <MapPin size={16} className="mr-2" />
                         {exp.location}

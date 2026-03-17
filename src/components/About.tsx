@@ -16,13 +16,13 @@ export const About = () => {
               <User className="text-primary mb-4" size={48} />
               <h3 className="text-2xl font-semibold mb-4">Professional Summary</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Results-driven Front-End Developer with expertise in building fast, scalable, 
-                and user-focused web applications using React.js, Next.js, JavaScript, HTML, and CSS. 
-                Proficient in Python and SQL, with a strong foundation in frontend technologies.
+                Cross-Platform Intermediate Software Developer with expertise in building scalable 
+                frontend and backend solutions using ReactJS, Next.js, React Native, GoLang, Python, and SQL. 
+                Proficient in AWS cloud services including S3, DynamoDB, Athena, Lambda, and CloudFormation.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Experienced in AWS cloud platforms, UI/UX design principles, and Agile environments. 
-                Recognized for clean code practices, team collaboration, and a growth-oriented mindset.
+                Experienced in workflow automation, cloud-based reporting systems, and AI integrations. 
+                Recognized for mentorship, client collaboration, and delivering secure, scalable systems.
               </p>
             </div>
           </div>

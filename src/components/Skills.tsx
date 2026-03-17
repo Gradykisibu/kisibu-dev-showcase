@@ -1,37 +1,27 @@
 
-import { Code, Database, Cloud, Palette, Users, Zap } from "lucide-react";
+import { Code, Database, Cloud, Users } from "lucide-react";
 
 export const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages",
-      icon: <Code size={24} />,
-      skills: ["JavaScript", "HTML", "CSS", "Python", "SQL", "Node.js"]
-    },
-    {
-      title: "Frameworks",
-      icon: <Zap size={24} />,
-      skills: ["React.js", "Next.js"]
-    },
-    {
-      title: "Databases & Cloud",
-      icon: <Database size={24} />,
-      skills: ["Firebase", "MongoDB", "AWS"]
-    },
-    {
-      title: "Tools",
+      title: "Cloud & DevOps",
       icon: <Cloud size={24} />,
-      skills: ["Git", "REST APIs", "Figma"]
+      skills: ["AWS S3", "DynamoDB", "Athena", "Lambda", "CodeCommit", "CloudWatch", "SWF", "CloudFormation", "Automation & Workflow Optimization", "Cloud-Based Reporting Systems"]
     },
     {
-      title: "Design & UX",
-      icon: <Palette size={24} />,
-      skills: ["Responsive Design", "UI/UX Design", "Agile (Scrum)"]
+      title: "Frontend Development",
+      icon: <Code size={24} />,
+      skills: ["ReactJS", "NextJS", "React Native", "JavaScript (ES6+)", "Basic Angular (Learning)"]
     },
     {
-      title: "Soft Skills",
+      title: "Backend Development",
+      icon: <Database size={24} />,
+      skills: ["GoLang", "Python", "SQL", "RESTful APIs", "AI Integrations (AWS Bedrock)"]
+    },
+    {
+      title: "Other",
       icon: <Users size={24} />,
-      skills: ["Problem-solving", "Time Management", "Teamwork", "Attention to Detail"]
+      skills: ["Cross-platform Development", "Mentorship & Team Collaboration", "IT Support", "Client Communication"]
     }
   ];
 
