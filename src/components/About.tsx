@@ -33,7 +33,7 @@ export const About = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <MapPin className="text-primary" size={20} />
-                  <span className="text-muted-foreground">52 Andrews Street, Kenilworth</span>
+                  <span className="text-muted-foreground">199 Ferreira Street, Kenilworth</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="text-primary" size={20} />
